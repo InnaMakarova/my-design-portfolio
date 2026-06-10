@@ -5,12 +5,12 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(135deg, #f9f6f1, #f3ede6);
+    background: linear-gradient(135deg, #050816, #0b1b4d, #04060f);
     color: #3c2f2f;
 }
 
 .container {
-    max-width: 720px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 60px 20px;
 }
