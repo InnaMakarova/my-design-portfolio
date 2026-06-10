@@ -1,37 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background: linear-gradient(135deg, #f9f6f1, #f3ede6);
     color: #3c2f2f;
-    text-align: center;
-    padding: 40px 20px;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 
 .top {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
+    margin-bottom: 40px;
 }
 
 .photo {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     overflow: hidden;
     background: #ddd url('IMG_8266.JPG') center/cover no-repeat;
+    flex-shrink: 0;
 }
 
 h1 {
-    font-family: 'Roboto';
+    font-family: 'Playfair Display', serif;
     font-size: 2.2em;
-    letter-spacing: 0.5px;
+    margin: 0;
 }
 
 .experience {
-    max-width: 500px;
-    margin: 0 auto 30px;
     font-size: 0.95em;
-    line-height: 1.7em;
+    line-height: 1.7;
+    margin-bottom: 30px;
 }
 
 .experience b {
@@ -39,132 +48,87 @@ h1 {
     font-weight: 600;
 }
 
-.dates {
-    opacity: 0.75;
-    display: block;
-    margin-bottom: 6px;
-}
-
-/* Ссылки внутри опыта */
 .experience a {
-    color: #b3543e !important;
-    text-decoration: none !important;
+    color: #b3543e;
+    text-decoration: none;
     font-weight: 600;
 }
 
 .experience a:hover {
-    text-decoration: none !important;
+    text-decoration: underline;
 }
 
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
+.dates {
+    opacity: 0.7;
+    display: block;
+    margin: 10px 0 5px;
 }
 
 hr {
     border: none;
     height: 1px;
     background: rgba(179, 84, 62, 0.3);
-    margin: 25px auto;
-    width: 50%;
-    border-radius: 2px;
+    margin: 30px 0;
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 14px;
-    margin-top: 20px;
 }
 
 .buttons a {
+    display: block;
+    text-align: center;
     background: linear-gradient(135deg, #c7684d, #b3543e);
     color: #fff;
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 14px 20px;
     border-radius: 14px;
     font-weight: 600;
-    font-size: 1em;
-    width: 220px;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
     box-shadow: 0 3px 8px rgba(0,0,0,0.12);
-    transition: all 0.3s ease;
+    transition: 0.25s ease;
 }
 
 .buttons a:hover {
-    background: linear-gradient(135deg, #b3543e, #9f4938);
     transform: translateY(-2px);
-    box-shadow: 0 5px 12px rgba(0,0,0,0.18);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.18);
 }
 
 .contact-block {
-  text-align: center; /* Центрируем блок */
-  margin-top: 30px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .tg-link {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-  color: #b3543e;
-  transform: translateX(-9px); /* сдвиг всей строки чуть влево */
-}
-
-.tg-link:hover {
-  color: #993f32; /* Лёгкий эффект при наведении */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #b3543e;
+    text-decoration: none;
 }
 
 .tg-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px; /* Отступ справа от иконки */
+    width: 22px;
+    height: 22px;
 }
 
-/* --- Адаптивность --- */
 @media (max-width: 600px) {
-    body {
-        padding: 30px 20px;
-        padding-bottom: 120px;
-    }
-
-    .photo {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 25px;
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     h1 {
-        font-size: 2em;
-        font-weight: 700;
-        margin-bottom: 30px;
-    }
-
-    .experience {
-        font-size: 1em;
-        line-height: 1.75em;
-        margin-bottom: 30px;
-        padding: 0 10px;
+        font-size: 1.9em;
     }
 
     .buttons a {
-        width: 90%;
-        max-width: 300px;
-        font-size: 1.05em;
-        padding: 14px 24px;
-        border-radius: 16px;
+        max-width: 100%;
     }
-    
-    .tg-link {
-      display: inline-flex;
-      align-items: center;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      color: #b3543e;
-      transform: translateX(-8px); /* сдвиг всей строки чуть влево */
-   }
 }
