@@ -20,7 +20,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .photo {
@@ -35,7 +35,7 @@ body {
 h1 {
     font-family: 'Roboto', serif;
     font-size: 1.8em;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .experience {
